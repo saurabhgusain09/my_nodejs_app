@@ -1,0 +1,14 @@
+name: my-first-pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+    docker_build_push:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v6
+            - name: build image 
+              run: docker build -t my-first-pipeline:latest .
