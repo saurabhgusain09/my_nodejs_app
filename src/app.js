@@ -33,7 +33,7 @@ app.get('/health', (req, res) => {
 // Home route
 app.get('/', (req, res) => {
   log('INFO', 'Home route hit');
-  res.json({ message: 'Hello from Dockerized Node.js app', version: '1.0.0' });
+  res.json({ message: 'Hello from Dockerized Node.js app..!', version: '1.0.0' });
 });
 
 // A route that intentionally logs a warning
