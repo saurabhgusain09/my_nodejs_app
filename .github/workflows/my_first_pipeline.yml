@@ -27,4 +27,4 @@ jobs:
               with:
                 context: .
                 push: true
-                tags: ${{ secrets.DOCKERHUB_USERNAME }}/my_node_app:${{ env.TAG }}  
+                tags: ${{ secrets.DOCKERHUB_USERNAME }}/my_node_app:${{ env.SHORT_SHA }}  
